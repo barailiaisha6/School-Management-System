@@ -1,12 +1,15 @@
 package com.example.school.controller;
 
-import co.example.school.dao.AttendanceDAO;
+import com.example.school.dao.AttendanceDAO;
 import java.util.Scanner;
 
 public class AttendanceController {
-
+    public static void main(String[] args) {
+   
     AttendanceDAO AD = new AttendanceDAO();
     Scanner sc = new Scanner(System.in);
+     }
+
 
     public void markAttendance() {
 

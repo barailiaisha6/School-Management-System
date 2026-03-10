@@ -4,9 +4,10 @@ import com.example.school.dao.FeeDAO;
 import java.util.Scanner;
 
 public class FeeController {
-
+       public static void main(String[] args) {
     FeeDAO FD = new FeeDAO();
     Scanner sc = new Scanner(System.in);
+       }
 
     public void addFee() {
 

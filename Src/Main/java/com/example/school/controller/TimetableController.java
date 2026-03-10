@@ -4,9 +4,10 @@ import com.example.school.dao.TimetableDAO;
 import java.util.Scanner;
 
 public class TimetableController {
-
+      public static void main(String[] args) {
     TimetableDAO TD = new TimetableDAO();
     Scanner sc = new Scanner(System.in);
+ }
 
     public void addSchedule() {
 

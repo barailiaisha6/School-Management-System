@@ -4,9 +4,13 @@ import com.example.school.dao.ExamDAO;
 import java.util.Scanner;
 
 public class ExamController {
+  
+    public static void main(String[] args) {
 
     ExamDAO ED = new ExamDAO();
     Scanner sc = new Scanner(System.in);
+    }
+
 
     public void addMarks() {
 

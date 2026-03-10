@@ -4,9 +4,10 @@ import com.example.school.dao.StaffDAO;
 import java.util.Scanner;
 
 public class StaffController {
-
+      public static void main(String[] args) {
     StaffDAO SD = new StaffDAO();
     Scanner sc = new Scanner(System.in);
+ }
 
     public void addStaff() {
 
