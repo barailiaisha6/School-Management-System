@@ -1,25 +1,26 @@
-
+package com.example.school.modal;
 
 public class Student {
+
     private int id;
     private String name;
     private String grade;
 
-    public Student(int id, String name, String grade) {
+    public Student(int id, String name, String grade){
         this.id = id;
         this.name = name;
         this.grade = grade;
     }
 
-    public int getId() {
+    public int getId(){
         return id;
     }
 
-    public String getName() {
+    public String getName(){
         return name;
     }
 
-    public String getGrade() {
+    public String getGrade(){
         return grade;
     }
 }

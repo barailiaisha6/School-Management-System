@@ -1,19 +1,28 @@
-import java.util.Scanner;
+package dao;
 
-public class StaffService {
+import modal.Staff;
 
-    private StaffDAO dao = new StaffDAO();
+public class StaffDAO {
+
+    Staff[] staff = new Staff[30];
+    int count = 0;
 
     public void addStaff(int id, String name, String subject) {
-        dao.addStaff(new Staff(id, name, subject));
+        staff[count] = new Staff(id, name, subject);
+        count++;
+        System.out.println("Staff added successfully.");
     }
 
-    public void showStaff() {
-        System.out.println("Staff:");
-        for (Staff s : dao.getAllStaff()) {
-            if (s != null) {
-                System.out.println(s.getName() + " - " + s.getSubject());
-            }
+    public void showAllStaff() {
+
+        System.out.println("\n===== STAFF LIST =====");
+
+        for (int i = 0; i < count; i++) {
+            System.out.println(
+                staff[i].getId() + " " +
+                staff[i].getName() + " " +
+                staff[i].getSubject()
+            );
         }
     }
 }
